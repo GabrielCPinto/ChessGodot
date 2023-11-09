@@ -99,7 +99,7 @@ animations = [{
 "speed": 5.0
 }]
 
-[node name="queen" type="CharacterBody2D"]
+[node name="queen" type="Area2D"]
 script = ExtResource("1_qejr4")
 
 [node name="collision" type="CollisionShape2D" parent="."]
@@ -108,3 +108,5 @@ shape = SubResource("RectangleShape2D_1bejd")
 [node name="anim" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_blc5w")
 animation = &"selected_white"
+
+[connection signal="input_event" from="." to="." method="_on_input_event"]

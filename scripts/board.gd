@@ -10,7 +10,7 @@ var knight = preload("res://prefab/knight.tscn")
 var bishop = preload("res://prefab/bishop.tscn")
 var queen = preload("res://prefab/queen.tscn")
 var king = preload("res://prefab/king.tscn")
-#var tile_size = board.get_tile_size()
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	for x in range(grid_size.x):
@@ -31,7 +31,7 @@ func _ready():
 	
 	for x in range(2):
 		create_piece(rook, x*7, 7.0, "White")
-		
+	
 	#knight
 	create_piece(knight, 1.0, 7.0, "White")
 	create_piece(knight, 6.0, 7.0, "White")
@@ -51,10 +51,6 @@ func _ready():
 	#king
 	create_piece(king, 4.0, 0.0, "Black")
 	create_piece(king, 4.0, 7.0, "White")
-	
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
-	pass
 
 func create_piece(piece, x, y, color):
 	var new_piece = piece.instantiate()

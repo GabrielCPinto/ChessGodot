@@ -1,8 +1,10 @@
-extends CharacterBody2D
+extends Area2D
 class_name Piece
 
 @export var color := "Black"
 @onready var anim = $anim
+
+var active = false
 
 func _ready():
 	if color == "White":

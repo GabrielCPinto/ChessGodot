@@ -99,7 +99,7 @@ animations = [{
 "speed": 5.0
 }]
 
-[node name="bishop" type="CharacterBody2D"]
+[node name="bishop" type="Area2D"]
 script = ExtResource("1_aoigy")
 
 [node name="collision" type="CollisionShape2D" parent="."]
@@ -108,3 +108,5 @@ shape = SubResource("RectangleShape2D_s4o8j")
 [node name="anim" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_hhsnu")
 animation = &"selected_black"
+
+[connection signal="input_event" from="." to="." method="_on_input_event"]
