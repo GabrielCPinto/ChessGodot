@@ -5,6 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://bi4uvxwdk288i" path="res://assets/CHESS ASSETS/Chess Pieces/white/Chess Pieces_white_queen.png" id="3_dg6tu"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1bejd"]
+size = Vector2(14, 15)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_uxicb"]
 atlas = ExtResource("2_37awp")
@@ -103,6 +104,7 @@ animations = [{
 script = ExtResource("1_qejr4")
 
 [node name="collision" type="CollisionShape2D" parent="."]
+position = Vector2(0, 0.5)
 shape = SubResource("RectangleShape2D_1bejd")
 
 [node name="anim" type="AnimatedSprite2D" parent="."]

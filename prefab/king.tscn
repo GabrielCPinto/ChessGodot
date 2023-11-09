@@ -5,6 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://dhi8egko1y4b1" path="res://assets/CHESS ASSETS/Chess Pieces/white/Chess Pieces_white_king.png" id="2_mp5oj"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_lmw5q"]
+size = Vector2(14, 16)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_qt3q2"]
 atlas = ExtResource("1_2jpv5")
