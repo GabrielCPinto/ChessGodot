@@ -13,13 +13,13 @@ func _ready():
 	else:
 		anim.play("idle_black")
 
-func _input_event(viewport, event, shape_idx):
+func _input_event(_viewport, event, _shape_idx):
 	if event is InputEventMouseButton and event.pressed and event.button_index == MOUSE_BUTTON_LEFT and !Global.active:
-		Global.active = true
-		print(anim.animation)
-		if color == "Black":
+		if color == "Black" and Global.turn == "Black":
+			Global.active = true
 			anim.play("selected_black")
-		else:
+		elif color == "White" and Global.turn == "White":
+			Global.active = true
 			anim.play("selected_white")
 	elif event is InputEventMouseButton and event.pressed and event.button_index == MOUSE_BUTTON_RIGHT and Global.active and (anim.animation == "selected_black" or anim.animation == "selected_white"):
 		Global.active = false
