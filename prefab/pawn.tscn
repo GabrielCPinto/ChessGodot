@@ -110,5 +110,3 @@ shape = SubResource("RectangleShape2D_utul6")
 [node name="anim" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_bc2k0")
 animation = &"idle_black"
-
-[connection signal="input_event" from="." to="." method="_on_input_event"]

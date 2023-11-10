@@ -112,5 +112,3 @@ sprite_frames = SubResource("SpriteFrames_y18xe")
 animation = &"selected_black"
 frame = 1
 frame_progress = 0.341791
-
-[connection signal="input_event" from="." to="." method="_on_input_event"]

@@ -109,6 +109,4 @@ shape = SubResource("RectangleShape2D_1bejd")
 
 [node name="anim" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_blc5w")
-animation = &"selected_white"
-
-[connection signal="input_event" from="." to="." method="_on_input_event"]
+animation = &"idle_white"

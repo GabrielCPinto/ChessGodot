@@ -109,5 +109,3 @@ shape = SubResource("RectangleShape2D_lmw5q")
 [node name="anim" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_w1int")
 animation = &"selected_black"
-
-[connection signal="input_event" from="." to="." method="_on_input_event"]
